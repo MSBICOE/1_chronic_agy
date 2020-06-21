@@ -1,0 +1,26 @@
+id,label,group,title,shape,value,color,image
+1,AR,Main Chronic Disease,Arthritis,circularImage,20468,#67001F,https://www.aiinsights.solutions.iqvia.com/images/disease/AR.jpg
+2,AS,Main Chronic Disease,Asthma,circularImage,27564,#B2182B,https://www.aiinsights.solutions.iqvia.com/images/disease/AS.jpg
+3,BP,Main Chronic Disease,Back Pain,circularImage,37684,#D6604D,https://www.aiinsights.solutions.iqvia.com/images/disease/BP.jpg
+4,C,Main Chronic Disease,Cancer,circularImage,93716,#F4A582,https://www.aiinsights.solutions.iqvia.com/images/disease/C.jpg
+5,CVD,Main Chronic Disease,Cardiovascular Disease,circularImage,180392,#FDDBC7,https://www.aiinsights.solutions.iqvia.com/images/disease/CVD.jpg
+6,CKD,Other Disease,Chronic Kidney Disease,circle,53804,#8E0152,https://www.aiinsights.solutions.iqvia.com/images/disease/CKD.jpg
+7,COPD,Main Chronic Disease,Chronic Obstructive Pulmonary Disease,circularImage,27400,#C51B7D,https://www.aiinsights.solutions.iqvia.com/images/disease/COPD.jpg
+8,D,Main Chronic Disease,Diabetes,circularImage,103736,#DE77AE,https://www.aiinsights.solutions.iqvia.com/images/disease/D.jpg
+10,MHC,Main Chronic Disease,Mental Health Conditions,circularImage,57592,#F1B6DA,https://www.aiinsights.solutions.iqvia.com/images/disease/MHC.jpg
+11,Osteo,Other Disease,Osteoporosis,circle,30432,#FDE0EF,https://www.aiinsights.solutions.iqvia.com/images/disease/Osteo.jpg
+12,Alcohol,Other Disease,Alcohol abuse,circle,24316,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/Alcohol.jpg
+14,BloodLoss,Other Disease,Blood loss anemia,circle,7064,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/BloodLoss.jpg
+15,Coagulopathy,Other Disease,Coagulopathy,circle,32604,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/Coagulopathy.jpg
+13,Anemia,Other Disease,Deficiency anemias,circle,26136,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/Anemia.jpg
+16,Drugs,Other Disease,Drug abuse,circle,9820,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/Drugs.jpg
+17,FluidsLytes,Other Disease,Fluid and electrolye disorders,circle,112248,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/FluidsLytes.jpg
+9,G,Other Disease,Gout,circle,7956,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/G.jpg
+18,HIV,Other Disease,HIV/AIDS,circle,1236,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/HIV.jpg
+19,Hypothyroid,Other Disease,Hypothyroidism,circle,7760,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/Hypothyroid.jpg
+20,Liver,Other Disease,Liver disease,circle,27776,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/Liver.jpg
+22,Obesity,Other Disease,Obesity,circle,36704,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/Obesity.jpg
+21,NeuroOther,Other Disease,Other neurological disorders,circle,36008,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/NeuroOther.jpg
+23,Paralysis,Other Disease,Paralysis,circle,25932,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/Paralysis.jpg
+24,PUD,Other Disease,Peptic ulcer disease excluding bleeding,circle,9184,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/PUD.jpg
+25,WeightLoss,Other Disease,Weight loss,circle,43012,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/WeightLoss.jpg

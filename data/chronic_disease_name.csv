@@ -1,0 +1,26 @@
+ID,Chronic_Disease,Chronic_Disease_Abbr,is_main_chronic
+1,Arthritis,AR,1
+2,Asthma,AS,1
+3,Back Pain,BP,1
+4,Cancer,C,1
+5,Cardiovascular Disease,CVD,1
+6,Chronic Kidney Disease,CKD,1
+7,Chronic Obstructive Pulmonary Disease,COPD,1
+8,Diabetes,D,1
+10,Mental Health Conditions,MHC,1
+11,Osteoporosis,Osteo,1
+12,Alcohol abuse,Alcohol,0
+14,Blood loss anemia,BloodLoss,0
+15,Coagulopathy,Coagulopathy,0
+13,Deficiency anemias,Anemia,0
+16,Drug abuse,Drugs,0
+17,Fluid and electrolye disorders,FluidsLytes,0
+9,Gout,G,0
+18,HIV/AIDS,HIV,0
+19,Hypothyroidism,Hypothyroid,0
+20,Liver disease,Liver,0
+22,Obesity,Obesity,0
+21,Other neurological disorders,NeuroOther,0
+23,Paralysis,Paralysis,0
+24,Peptic ulcer disease excluding bleeding,PUD,0
+25,Weight loss,WeightLoss,0

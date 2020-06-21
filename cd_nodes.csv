@@ -1,0 +1,26 @@
+ID,cd_from_name,cd_from_code,is_main_chronic,selected_chronic,color_from,image_from,image
+1,Arthritis,AR,1,1,#67001F,https://www.aiinsights.solutions.iqvia.com/images/disease/AR.jpg,C:/Users/Steven Wang/OneDrive/Ph_Study/2_chronic_agegroup/image/AR.jpg
+2,Asthma,AS,1,1,#B2182B,https://www.aiinsights.solutions.iqvia.com/images/disease/AS.jpg,C:/Users/Steven Wang/OneDrive/Ph_Study/2_chronic_agegroup/image/AS.jpg
+3,Back Pain,BP,1,1,#D6604D,https://www.aiinsights.solutions.iqvia.com/images/disease/BP.jpg,C:/Users/Steven Wang/OneDrive/Ph_Study/2_chronic_agegroup/image/BP.jpg
+4,Cancer,C,1,1,#F4A582,https://www.aiinsights.solutions.iqvia.com/images/disease/C.jpg,C:/Users/Steven Wang/OneDrive/Ph_Study/2_chronic_agegroup/image/C.jpg
+5,Cardiovascular Disease,CVD,1,1,#FDDBC7,https://www.aiinsights.solutions.iqvia.com/images/disease/CVD.jpg,C:/Users/Steven Wang/OneDrive/Ph_Study/2_chronic_agegroup/image/CVD.jpg
+6,Chronic Kidney Disease,CKD,1,0,#8E0152,https://www.aiinsights.solutions.iqvia.com/images/disease/CKD.jpg,C:/Users/Steven Wang/OneDrive/Ph_Study/2_chronic_agegroup/image/CKD.jpg
+7,Chronic Obstructive Pulmonary Disease,COPD,1,1,#C51B7D,https://www.aiinsights.solutions.iqvia.com/images/disease/COPD.jpg,C:/Users/Steven Wang/OneDrive/Ph_Study/2_chronic_agegroup/image/COPD.jpg
+8,Diabetes,D,1,1,#DE77AE,https://www.aiinsights.solutions.iqvia.com/images/disease/D.jpg,C:/Users/Steven Wang/OneDrive/Ph_Study/2_chronic_agegroup/image/D.jpg
+10,Mental Health Conditions,MHC,1,1,#F1B6DA,https://www.aiinsights.solutions.iqvia.com/images/disease/MHC.jpg,C:/Users/Steven Wang/OneDrive/Ph_Study/2_chronic_agegroup/image/MHC.jpg
+11,Osteoporosis,Osteo,1,0,#FDE0EF,https://www.aiinsights.solutions.iqvia.com/images/disease/Osteo.jpg,C:/Users/Steven Wang/OneDrive/Ph_Study/2_chronic_agegroup/image/Osteo.jpg
+12,Alcohol abuse,Alcohol,0,0,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/Alcohol.jpg,C:/Users/Steven Wang/OneDrive/Ph_Study/2_chronic_agegroup/image/Alcohol.jpg
+14,Blood loss anemia,BloodLoss,0,0,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/BloodLoss.jpg,C:/Users/Steven Wang/OneDrive/Ph_Study/2_chronic_agegroup/image/BloodLoss.jpg
+15,Coagulopathy,Coagulopathy,0,0,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/Coagulopathy.jpg,C:/Users/Steven Wang/OneDrive/Ph_Study/2_chronic_agegroup/image/Coagulopathy.jpg
+13,Deficiency anemias,Anemia,0,0,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/Anemia.jpg,C:/Users/Steven Wang/OneDrive/Ph_Study/2_chronic_agegroup/image/Anemia.jpg
+16,Drug abuse,Drugs,0,0,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/Drugs.jpg,C:/Users/Steven Wang/OneDrive/Ph_Study/2_chronic_agegroup/image/Drugs.jpg
+17,Fluid and electrolye disorders,FluidsLytes,0,0,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/FluidsLytes.jpg,C:/Users/Steven Wang/OneDrive/Ph_Study/2_chronic_agegroup/image/FluidsLytes.jpg
+9,Gout,G,0,0,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/G.jpg,C:/Users/Steven Wang/OneDrive/Ph_Study/2_chronic_agegroup/image/G.jpg
+18,HIV/AIDS,HIV,0,0,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/HIV.jpg,C:/Users/Steven Wang/OneDrive/Ph_Study/2_chronic_agegroup/image/HIV.jpg
+19,Hypothyroidism,Hypothyroid,0,0,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/Hypothyroid.jpg,C:/Users/Steven Wang/OneDrive/Ph_Study/2_chronic_agegroup/image/Hypothyroid.jpg
+20,Liver disease,Liver,0,0,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/Liver.jpg,C:/Users/Steven Wang/OneDrive/Ph_Study/2_chronic_agegroup/image/Liver.jpg
+22,Obesity,Obesity,0,0,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/Obesity.jpg,C:/Users/Steven Wang/OneDrive/Ph_Study/2_chronic_agegroup/image/Obesity.jpg
+21,Other neurological disorders,NeuroOther,0,0,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/NeuroOther.jpg,C:/Users/Steven Wang/OneDrive/Ph_Study/2_chronic_agegroup/image/NeuroOther.jpg
+23,Paralysis,Paralysis,0,0,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/Paralysis.jpg,C:/Users/Steven Wang/OneDrive/Ph_Study/2_chronic_agegroup/image/Paralysis.jpg
+24,Peptic ulcer disease excluding bleeding,PUD,0,0,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/PUD.jpg,C:/Users/Steven Wang/OneDrive/Ph_Study/2_chronic_agegroup/image/PUD.jpg
+25,Weight loss,WeightLoss,0,0,#1E41B3,https://www.aiinsights.solutions.iqvia.com/images/disease/WeightLoss.jpg,C:/Users/Steven Wang/OneDrive/Ph_Study/2_chronic_agegroup/image/WeightLoss.jpg

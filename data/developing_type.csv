@@ -1,0 +1,3 @@
+Type_Name,Developing_type,Sort_Order,Notes
+overall,General Disease Progression,1,General Disease Progression refers to any sequential disease pairs. The purpose of this observation is to understand in general which disease progression path is more likely to develop.
+from,Initial Disease Known,2,Initial Disease Known refers to a sequential disease pair when the initial disease has already known. The purpose of this observation is to understand for a particular disease what will be the next most likely disease as the comorbidity.
