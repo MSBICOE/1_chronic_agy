@@ -1,0 +1,129 @@
+---
+title: "Proposal for Predictive Modelling of Disease Trajectories"
+author: "Shangzhou Wang"
+date: "29/05/2020"
+output:
+  pdf_document: default
+  html_document:
+    css: steven_style.css
+  word_document: default
+bibliography: ["Disease_Trajectories_tex_1.bib", "PH_Chronic_Disease_Better.bib"]
+biblio-style: apalike
+link-citations: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("../utility_libs.R")
+library(readr)
+library(lubridate)
+library(tidyverse)
+
+workplan <- read_csv("workplan.csv") %>% 
+  mutate(StartDate = dmy(StartDate),
+         OriginalStart = dmy(OriginalStart),
+         FinishDate = dmy(FinishDate)
+  )
+
+g_plan <- plot_gantt(event = workplan$Parent_Task, 
+           start = workplan$StartDate, 
+           end = workplan$FinishDate, 
+           label = workplan$DaysDisplay, 
+           group = workplan$ProjectType, 
+           title = "Research Project Plan", 
+           subtitle = "", 
+           size = 8, colour = "red", 
+           save = FALSE, subdir = "Image") 
+
+```
+-------
+
+|             |               |
+|-------------|---------------|
+|**Project Title:** |Predictive Modeling of Disease Trajectories|
+|**Supervisor Name:** |DR SHAHADAT UDDIN|
+|**Auxiliary supervisor:** |DR Matloob Khushi|
+|**Proposed Mode of Research:** |Creative Work|
+
+-------
+
+## Aims and Objectives
+
+This research project aims to build a framework to predict chronic disease trajectory by using insurance claim data in conjunction with other linkable datasets, like electronic health data(EHR), demographic and geospatial data etc. A number of supervised and unsupervised machine learning techniques will be utilized to achieve this purpose. A novel technique of turning the variables and metrics into graphs and then using a convolutional neural network (CNN) to perform the prediction is planned to be evaluated.
+
+The objectives of this research are to answer questions like:
+
+1. How the gender, age and years of development impact the comorbidity of common chronic diseases?
+2. What will be comorbidities progression network for any specific chronic disease?
+3. What will be the most multimorbidity combination between the most common and concerned chronic diseases? 
+4. Can we predict the probability of next possible disease or comorbidity based on the current health record variables?
+5. Can we estimate and forecast the common chronic disease prevalence within a specific year based on the current status quo?
+
+
+## Synopsis
+
+As specified by the Australian Institute of Health and Welfare(AIHW), chronic diseases have a significant impact on the  health sector and it is the leading cause of illness, disability and death in Australia [@aihw_australias_2016]. About half of Australians have at least one prominent chronic condition and nearly a quarter of all Australians had two or more chronic diseases. There are around nine out of ten deaths in 2015 closely related to chronic diseases[@agdh_chronic_2019]. The prevalence of chronic diseases and the number of chronic diseases in comorbidity to the aged population group are even much higher. 
+
+Comorbidity of chronic diseases is defined as the "point-prevalent concurrence" of the diseases concerned [@schellevis1993ComorbidityChronicDiseases]. In a more general term, comorbidity is the presence of  more than 1 distinct condition in an individual [@valderas2009DefiningComorbidityImplications]. Normally, there is an index condition designated and any additional condition is regarded as comorbidity. In addition to comorbidity, multimorbidity has been increasingly adopted to refer to “the co-occurrence of multiple chronic or acute diseases and medical conditions within one person” [@bayliss2008ProcessesCareDesired]. With different to the comorbidity, multimorbidity particularly means that 2 or more distinct disorders co-exist without any implicit ordering[@valderas2009DefiningComorbidityImplications]. Therefore, there isn't an index condition designated for multimorbidity. This subtle difference could make a huge difference in terms of what kinds of research questions to be answered.
+
+AIHW reported that for people aged over 65 years old, 87% of them have chronic conditions and 60% have comorbidities [@aihw_australias_2016; @aihw_australias_2018]. As Bayliss et al. [@bayliss2008ProcessesCareDesired] stated that the there is a increasing desire for specific patient-centered care for elder multimorbidity patients. There is no doubt that comorbid and multimorbid chronic diseases are increasingly placing a greater burden on individuals, communities and health care services [@islam2014MultimorbidityComorbidityChronic]. Along with the population ageing, overall improved treatment and exposed to better medication, a substantial increasing financial burden on the health care system is foreseeable. Prevention of chronic diseases and delay progression of comorbidity have been paramount important for the quality of life and the endurability of a health care system. 
+
+Insurance claim data has a very long history of data collection [@mitchell1994UsingMedicareClaimsa]. Since insurance claim data normally covers a large patient base over a long period of time, it has widely accepted to be used for the research investigation purposes [@uddin2015AdministrativeClaimData]. However, the insurance claim data is normally lack of the information of laboratory test results and the drug prescribed for the diseases diagnosed. These kinds of information are usually recorded in the electronic health records(EHR). It is reported that around 1 in 3 (35%) health problems managed by general practitioners (GP) are chronic diseased related[@britt_general_2016-1], primary care medical data must contain valuable information to understand the disease trajectory. As Schulam and Arora stated longitudinal data extracted from individual electronic health records(EHR) is becoming increasingly important in medical research[@schulam_disease_2016], this project aims to utilize the Australian insurance claim and EHR data to build a predictive framework on disease trajectories.
+
+A typical EHR record contains a patient's basic demographic information, clinical consultation, biometric and biomedical information, laboratory test items and results, diagnosis and drug prescriptions. Since a patient is normally registered to a particular GP, EHR records from a GP or a medical centre captures the longitudinal view of patients' medical history. Since each diagnosis is recorded as a sequence, for each patient an ordered series of diseases can be used for disease trajectory modelling [@jensen_temporal_2014]. Since the disease sequence can be defined as from Healthy --> D1 --> D2 --> D3 etc., using the extracted disease sequence, the latest diagnosed disease can be used as the training label and the previous disease sequence together with all other available EHR variables a machine learning model can be built.
+
+
+## Background
+
+The motivation of this research is based on Khan's research of predicting the risk on chronic disease: a framework based on graph theory and social network analysis. In Khan's research, the hospital admission data was used to understand chronic disease pathways. The research gives a future direction on including the primary care data since the data from the clinical notes has extremely valuable information which is not available from the hospital admission data [@khan_predicting_2016].
+
+There are a few other works found on the field of disease trajectories or disease progressions. Jensen et al. [@jensen_temporal_2014] used the Danish population-wise disease registry data to discover the disease trajectory clusters. In their study, temporal correlation analysis was utilized to identify the pairs of diseases with significant directional progression. This proposal is intended to employ this grouping technique to extract the disease sequence from EHR data for further machine learning modeling. Futoma et al. [@futoma_predicting_2016] proposed a probabilistic generative model to predict the disease progression on the multivariate longitudinal clinical data. Their work mainly focused on disease trajectory modeling for Chronic kidney disease(CKD) and left the future works for other diseases. Schulam and Saria[@schulam_framework_2016] proposed a hierarchical latent model to predict disease trajectories which takes care of heterogeneity difference across individuals.
+
+Given that the characteristics of EHR data are high-dimensional, temporal, sparse, irregular and biased[@cheng_risk_2016], great challenges have been facing on working with EHR data. Nevertheless, there are a few very interesting works pointed out further research directions on analyzing EHR data. Cheng et al. [@cheng_risk_2016] employed a deep learning approach to extract effective phenotypes from EHR data. Their idea of turning the patient longitudinal data into a temporal matrix is inspiring. With time in one dimension and events in another dimension, the temporal matrix can be fed into a convolutional neural network to extract the phenotype and then perform prediction. This project will further look into this approach with a novel multi-channel variable matrix concept.
+
+
+## Expected Research Contribution
+
+
+Due to the difficulty of accessing EHR dataset, there are little researches undertaken to understand the influence of longitudinal lab test results and drug usages on the disease trajectories. Many existing research works were focusing on the overall disease progression pathway by utilizing the hospital admission data and healthcare insurance data. Given that the rich variables available in the EHR dataset, like each lab test can become a variable, the selection of variables or methodology adopted to perform the analysis will be very different with traditional predictive analysis. In this proposal, the applicant will propose a novel deep learning approach as one of the research methodologies. In addition to the novel approach by employing new deep learning techniques, an innovated approach based on the long-established hidden Markov models(HMMs) in conjunction with the Viterbi algorithm will also be evaluated. 
+
+As Shchulam & Arora[@schulam_disease_2016] pointed out that the longitudinal EHR dataset has increasingly become more important in medical research, it will be no doubt that this research will make a contribution to the future researches which utilize the EHR dataset. 
+
+In Australia, with the potential possibility to access to my health record data for research purpose, this proposed research based on EHR dataset could also provide a useful reference.
+
+
+## The Proposed Methodology
+
+As stated in the research objective and background, this research will employ several unsupervised and supervised machine learning and big data analytic techniques. The research aims to glean the influential variables from EHR dataset and then use these variables in conjunction with known disease sequence to predict the next most possible disease or comorbidity, more specifically, a novel deep learning approach by exerting CNNs classification on a variable matrix formed by the gleaned variables to predict next disease or comorbidity.
+
+Convolutional neural network (CNN) has been available since 1990s. The application of CNN got a breakthrough in 2012, Alex et al. released the AlexNet which as stated in their paper “a variant of this model in the ILSVRC-2012 competition achieved a winning top-5 test error rate of 15.3%, compared to 26.2% achieved by the second-best entry.” [@krizhevsky_imagenet_2017] Since then, CNN is widely used as a deep learning technique for image recognition and classification. However, the research on using CNN to predict disease trajectory by using EHR is very limited.  
+
+With different to what Cheng et al. [@cheng_risk_2016] proposed to fed a temporal matrix into a CNN model, a brand new idea is proposed in this research by supplying variable matrix for each different period as one channel into a CNN model. Therefore, if we think of a variable matrix at a specific period is a representation of a mono-color image then each different period variable matrix can be stacked together as a multiple-layer image. Each layer becomes a channel to feed into a CNN model. This concept has extended the normal concept of an image in a CNN model which has at most 3 channels (3 color RGB) only. There is no such research found yet in the literature review. 
+
+In addition to this novel CNN approach, a traditional state sequence model by using hidden Markov models(HMMs) in conjunction with Viterbi algorithm is also planned to be evaluated.
+
+
+## Work Plan
+
+Since this research is planned to be conducted in part-time, an initial plan to complete this research project is set to between 5 to 6 years. A breakdown of major milestones is depicted in the Gantt chart as below:
+
+```{r project_plan, echo=FALSE, fig.width = 8}
+ g_plan
+
+```
+
+
+## Resources
+
+In order to conduct this research, one of the critical success factors is the availability of hospital admission and EHR dataset with a large stable General Practitioner panel and longitudinally stable patients. There are nanny different electronic medical software available in the Australia market, like MD3, ZMD, Genie Solutions and Best Practice etc. [@bp_best_2019; @genie_solutions_genie_2019; @medicaldirector_md3:_2019; @zmd_zmdgroup_2019] Historically, due to the privacy and software platform issue, to access the EHR datasets is a daunting task. As khan stated in his research that it is almost impractical to obtain primary care data (EHR data) on a large scale. [@khan_predicting_2016] It is anticipated that there will be a substantial time in seeking and negotiating the accessibility of EHR datasets.
+
+It is very fortunate that we have CBHS insurance claim data secured to use. The dataset contains the diagnoses information for each episode and the claim information of its members when they admitted into hospitals.
+
+Since a novel deep learning approach will be evaluated in this research, accessing to GPU powered computer is expected to run the deep learning and CNN models.
+
+## References
+
+<br />
+
+
+
