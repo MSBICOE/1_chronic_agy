@@ -1,0 +1,49 @@
+---
+title: "Change of Major Chronic Disease Comorbidities with Age, Gender and Developing Years"
+author: 
+  - "Shangzhou Wang, Shahadat Uddin"
+date: "28/06/2020"
+output:
+  html_document:
+    css: steven_style.css
+bibliography: ["Disease_Trajectories_tex_1.bib", "PH_Chronic_Disease_Better.bib"]
+biblio-style: apalike
+link-citations: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+Generally include 3-4 paragraphs to describe the research problem, why the problem needs to be addressed etc.
+
+
+# Methods
+
+fully describe the dataset and any methods that will be used
+
+# Results
+
+just describe the findings using a plain language
+
+
+# Discussion
+
+what are the impact of the findings, 'so-what' of the findings generally 3-4 paragraphs.
+
+
+# Conclusion
+
+Conclusion remarks and limitations of the study (1-2 paragraphs)
+
+
+# Reference
+
+
+
+
+
+
+
