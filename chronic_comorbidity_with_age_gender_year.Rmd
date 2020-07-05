@@ -18,8 +18,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
-
-
 Generally include 3-4 paragraphs to describe the research problem, why the problem needs to be addressed etc.
 
 As specified by the Australian Institute of Health and Welfare(AIHW), chronic diseases have a significant impact on the health sector and it is the leading cause of illness, disability and death in Australia [@aihw2016AustraliaHealth2016]. About half of Australians have at least one prominent chronic condition and nearly a quarter of all Australians had two or more chronic diseases. There are around nine out of ten deaths in 2015 closely related to chronic diseases. The prevalence of chronic diseases and the number of chronic diseases in comorbidity to the aged population group are even much higher.
@@ -33,7 +31,25 @@ Based on the recent search and as Caughey et al. stated the studies on comorbidi
 
 # Methods
 
-fully describe the dataset and any methods that will be used
+## Dataset
+
+Data used in this study is from an Australia insurance claim data. Insurance claim data has a very long history of data collection [@mitchell1994UsingMedicareClaims]. Since insurance claim data normally covers a large patient base over a long period of time, it has widely accepted to be used for the research investigation purposes [@uddin2015AdministrativeClaimData].
+
+In order to make use of the original data, a number of cleaning and filtering process has been applied to extract a subset of data for the research use. Particularly, only when an episode has a valid ICD code which mapped to Charlson and Elixhauser comorbidities [@quan2005CodingAlgorithmsDefining] and the further fine-tune defined chronic diseases will be used for this study. Based on these criterion, the dataset has 29,280 unique de-identified patients and the reportable year covers from 14 August 1995 to 13 April 2018. A total of 69,302 comorbidity progression instances is identified within the sub-dataset.
+
+## Chronic Disease Code Mapping
+
+As the study’s main focus is to explore the significance of comorbidity change for the 8 most common chronic diseases in Australia as defined by Australian Government Department of Health and Australian Institute of Health and Welfare(AIHW) [@aihw2018AustraliaHealth2018; @agdh_chronic_2019], a clear chronic disease to ICD code mapping definition needs to be determined. However, there is indeed no current clearly agreed chronic disease to ICD code mapping available in a publication, especially for the Australia context. Quan et al. [@quan2005CodingAlgorithmsDefining] bridged 30 widely adopted Elixhauser comorbidities [@elixhauser1998ComorbidityMeasuresUse; @toson2016NewICD10Version]  with ICD-9-CM and ICD-10 code. However, these comorbidity definitions are not exactly matching with the chronic diseases which public health practice normally refers to. For instance, in ICD-9-CM and ICD-10 Coding Algorithms for Elixhauser Comorbidities table, there is no back pain defined as comorbidity. Meanwhile, cardiovascular and cancer span more than one comorbidities [@quan2005CodingAlgorithmsDefining]. Therefore, directly using Elixhauser comorbidities ICD mapping to represent chronic diseases is not in line with the 8 common chronic diseases defined by by Australian Government Department of Health.
+
+The Healthcare Cost and Utilization Project (HCUP) is a family of healthcare databases and related software tools and products developed through a USA Federal-State-Industry partnership and sponsored by the Agency for Healthcare Research and Quality (AHRQ). HCUP developed a Chronic Condition Indicator for the International Classification of Diseases based on ICD-10-CM. This database has a clear definition whether a diagnose is chronic or not. However, it is currently in a beta version and it is neither widely adopted now have a super-level chronic disease grouping to group chronic ICD code to a more common chronic disease. Nevertherless, this database provided some very useful information to determine if an ICD code is a chronic condition. In this study, this HCUP database has been used for a reference to support determine if an ICD code is chronic condition or not.
+
+Principal Diagnosis data cube under ICD-10-AM Edition 10, 2017-18 is a database maintained by AIHW. The principal diagnosis is defined as the diagnosis established after study to be chiefly responsible for occasioning the patient’s episode of care in hospital [@PrincipalDiagnosisData]. The data cube recorded 3 to 5 ICD-10-AM diagnosis code and it is the main reference data cube used to search those 8 common chronic disease and its corresponding ICD codes. Elixhauser Comorbidities table and HCUP database are both refereed to ensure the correctness and the coverage of ICD code for a particular chronic disease. For back pain, since there is no similar definition in, the website the burden of Musculoskeletal Diseases in the Unite States is referenced to get those ICD chapter names and then use these names to seek in the Principal Diagnosis data cube.
+
+## ICD-10-AM to ICD 9 Convertion
+
+## Other Comorbidity
+
+
 
 # Results
 
