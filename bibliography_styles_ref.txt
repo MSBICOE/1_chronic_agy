@@ -1,0 +1,5 @@
+normally use name:
+biblio-style: apalike
+
+number style:
+csl: biomed-central.csl (downloaded from Zotero)

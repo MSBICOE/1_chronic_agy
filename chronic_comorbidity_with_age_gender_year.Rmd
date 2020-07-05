@@ -5,9 +5,10 @@ author:
 date: "28/06/2020"
 output:
   html_document:
+    number_sections: true
     css: steven_style.css
 bibliography: ["Disease_Trajectories_tex_1.bib", "PH_Chronic_Disease_Better.bib"]
-biblio-style: apalike
+csl: biomed-central.csl
 link-citations: yes
 ---
 
@@ -17,7 +18,17 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
+
+
 Generally include 3-4 paragraphs to describe the research problem, why the problem needs to be addressed etc.
+
+As specified by the Australian Institute of Health and Welfare(AIHW), chronic diseases have a significant impact on the health sector and it is the leading cause of illness, disability and death in Australia [@aihw2016AustraliaHealth2016]. About half of Australians have at least one prominent chronic condition and nearly a quarter of all Australians had two or more chronic diseases. There are around nine out of ten deaths in 2015 closely related to chronic diseases. The prevalence of chronic diseases and the number of chronic diseases in comorbidity to the aged population group are even much higher.
+
+Comorbidity of chronic diseases is defined as the “point-prevalent concurrence” of the diseases concerned [@schellevis1993ComorbidityChronicDiseases]. In a more general term, comorbidity is the presence of more than 1 distinct condition in an individual [@valderas2009DefiningComorbidityImplications]. Normally, there is an index condition designated and any additional condition is regarded as comorbidity. In addition to comorbidity, multimorbidity has been increasingly adopted to refer to “the co-occurrence of multiple chronic or acute diseases and medical conditions within one person”[@bayliss2008ProcessesCareDesired]. With different to the comorbidity, multimorbidity particularly means that 2 or more distinct disorders co-exist without any implicit ordering [@valderas2009DefiningComorbidityImplications]. Therefore, there isn’t an index condition designated for multimorbidity. This subtle difference could make a huge difference in terms of what kinds of research questions to be answered.
+
+AIHW reported that for people aged over 65 years old, 87% of them have chronic conditions and 60% have comorbidities [@aihw2016AustraliaHealth2016; @aihw2018AustraliaHealth2018]. As Bayliss et al. [@bayliss2008ProcessesCareDesired] stated that there is a increasing desire for specific patient-centered care for elder multimorbidity patients. There is no doubt that comorbid and multimorbid chronic diseases are increasingly placing a greater burden on individuals, communities and health care services [@islam2014MultimorbidityComorbidityChronic]. Along with the population ageing, overall improved treatment and exposed to better medication, a substantial increasing financial burden on the health care system is foreseeable. Prevention of chronic diseases and delay progression of comorbidity have been paramount important for the quality of life and the endurability of a health care system.
+
+Based on the recent search and as Caughey et al. stated the studies on comorbidity associated with chronic disease is relatively low [@caughey2008PrevalenceComorbidityChronic]. There is a clear need on understanding of the significant comorbidity of each chronic disease. In particular, there is no paper found with in the Australia context on the impact of age group, gender and years of development towards the comorbidity change of chronic diseases. This study aims to use the insurance claim data to explore the comorbidity of the Australia 8 most common chronic diseases. These 8 common chronic disease are [@aihw2018AustraliaHealth2018; @agdh_chronic_2019]: Arthritis, Asthma, Back pain, Cancer, Cardiovascular, Chronic obstructive pulmonary disease (COPD), Diabetes, and Mental health conditions.
 
 
 # Methods
